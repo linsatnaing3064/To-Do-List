@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="body-wrap">
+        <div class="task-list-wrap">
+            <h4 class="header-text">Your Task List</h4>
+            <ul id="tasks-list">
+
+            </ul>
+        </div>
+        <div class="category-list-wrap">
+            <h4 class="header-text">Your Category List</h4>
+            <div class="category-adding-wrap">
+                <input type="text" id="addCategory" class="add-category" placeholder="Add new category">
+                <button class="adding-category-btn" onclick="addCategory()">+</button>
+            </div>
+            <ul id="category-list">
+
+            </ul>
+        </div>
+        <div class="task-adding-wrap">
+            <h4 class="header-text">Add Your Task</h4>
+            <div class="taw-first-part">
+                <input type="text" id="addTask" class="add-task" placeholder="Task">
+                <button class="adding-task-btn" onclick="addTask()">+</button>
+            </div>
+            <div class="taw-second-part">
+                <input type="date" id="taskDate" name="task-date">
+                <textarea id="taskDescription" placeholder="Description"></textarea>
+                <select id="categoriesList" class="categories-list">
+                    <option value="No Category">No Category</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

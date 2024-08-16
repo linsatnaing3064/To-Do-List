@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+.body-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 0 auto;
+}
+.task-adding-wrap, .task-list-wrap, .category-list-wrap {
+    margin: 80px 0 30px 0;
+    padding: 20px;
+    background: #2c2c2c;
+    border-radius: 30px;
+}
+h4.header-text {
+    text-align: center;
+    margin: 0 20px 20px;
+    font-size: 25px;
+}
+.taw-first-part, .category-adding-wrap {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    margin-bottom: 10px;
+}
+input#addTask,input#addCategory {
+    padding: 15px;
+    flex: 1;
+    border-radius: 50px 0 0 50px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+button.adding-task-btn,button.adding-category-btn {
+    font-size: 30px;
+    background: #006aff;
+    color: #fff;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    padding: 0 20px 0 17px;
+    height: 100%;
+    cursor: pointer;
+}
+
+input#taskDate {
+    height: 45px;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.taw-second-part {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea#taskDescription {
+    height: 75px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+select#categoriesList {
+    height: 45px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+@media(max-width:600px){
+    .body-wrap {
+        width: 90%;
+    }
+}
+li.task-item,li.category-item {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    align-items: center;
+}
+li.category-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li.task-item:not(:last-child),li.category-item:not(:last-child) {
+    border-bottom: 1px solid #525252;
+}
+
+.task-and-date {
+    flex: 1;
+    margin: 0 10px;
+}
+
+ul#tasks-list {
+    margin: 0;
+    padding: 0;
+}
+
+button.task-delete {
+    font-size: 20px;
+    background: none;
+    color: #f00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.task-adding-wrap, .category-list-wrap {
+    margin-top: 0;
+}
+
+h4.task-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+p.task-date {
+    font-size: 15px;
+    color: #bbb;
+}
+
+h4.category-name {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.checked {
+    color: #717171 !important;
+    text-decoration: line-through;
+}
+
